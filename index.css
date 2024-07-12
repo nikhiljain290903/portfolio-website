@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items:end;
+    justify-content:space-between;
+    background-color:rgb(26, 20, 110);
+    color: white;
+}
+
+
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    background-color:rgb(2, 4, 47) ;
+    width: 100%;
+    height: 700px;
+   
+}
+
+.detel h1{
+    margin-left: 150px;
+    margin-top: 200px;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detel p{
+    margin-left: 150px;
+    margin-top: 20px;
+    color: #555;
+    line-height: 22px;
+}
+
+.detel button{
+    margin-left: 150px;
+    margin-top: 20px;
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.detel a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    background-color:crimson;
+
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+.about {
+    background-color:rgb(2, 4, 47) ;
+    width: 97.5%;
+    height: 500px;
+    margin-top: 5px;
+    color: white;
+    padding-left: 40px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+
+}
+.ab1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: myfirst 30s 10;
+    animation-direction: alternate;
+}
+@keyframes myfirst{
+    0%   {right: -2300px; }
+    25%  {right: 1px; }
+    50%  {right: 1px;}
+    75%  {right: -1600px;}
+    100% {right: 1px;}
+}
+.ab1 h1{
+    margin-left: 640px;
+    font-size: 30px;
+    font-family:cursive;
+}
+.ab1 p{
+    font-size: 20px;
+    width: 1070px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.ab1 img{
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 280px;
+    width: 280px;
+    animation: myfirst 20s 10;
+    animation-direction: alternate;
+}
+.projects{
+    width: 100%;
+    height: 1150px;
+    background-color:rgb(2, 4, 47);
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h1{
+    color: white;
+    font-family: cursive;
+    padding-left: 650px;
+    padding-top: 20px;
+}
+.projects h2{
+    color: white;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.mainproj{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.subproj{
+    width: 300px;
+    height: 360px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+}
+.subproj img{
+    padding-left: 80px;
+    padding-top: 20px;
+    width: 130px;
+    height: 120px;
+    border: none;
+    border-radius: 20px;
+}
+.subproj h3{
+    font-size: 15px;
+    padding-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.subproj h4{
+    font-size: 14px;
+    padding-left: 15px;
+    font-family: monospace;
+    color:orangered;
+    padding-right: 2px;
+}
+.subproj button{
+    width: 100px;
+    height:35px;
+    margin-left: 90px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.but1{
+    margin-top:1px;
+}
+.mainml{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ml{
+    background-color: aqua;
+    height: 420px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ml img{
+    width: 240px;
+    height: 210px;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+.ml h2{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.ml h3{
+    color: brown;
+    font-size: 14px;
+    padding-left: 18px;
+    font-family: monospace;
+    padding-top: 15px;
+}
+.ml button{
+    width: 150px;
+    height:40px;
+    margin-left: 120px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+
+}
+.contact{
+    width: 100%;
+    background-color: rgb(2, 4, 47);
+    height: 650px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact h1{
+    color: white;
+    font-family: cursive;
+    padding-top: 20px;
+}
+.box{
+    background-color:aliceblue ;
+    height: 60px;
+    width: 550px;
+    margin-left: 470px;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-radius: 100px;
+  
+
+}
+#mainid{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+   
+}
+
+input{
+    width:400px; /* Full width */
+    padding: 10px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 20px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+    margin-left: 9px;
+    background-color:#1D5B79;
+    color: white;
+    font-size: 15px
+}
+input::placeholder{
+    padding: 5px;
+    color: white;
+}
+.inname{
+    padding-left: 20px;
+    font-size: 16px;
+}
+.message{
+   height: 100px;
+   border-radius: 30px;
+   padding-bottom:50px;
+}
+#box1{
+    height: 120px;
+    border-radius: 40px;
+}
+#submit{
+    margin-left: 700px;
+    margin-top: 30px;
+    width: 80px;
+    font-size: 15px;
+    border: solid 4px aliceblue;
+    cursor: pointer;
+}

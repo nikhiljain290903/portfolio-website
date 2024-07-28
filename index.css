@@ -91,15 +91,13 @@ span{
 
 }
 .images{
-    width: 45%;
-    height: 80%;
+    width: 20%;
     position: absolute;
     bottom: 0;
     right: 100px;
 }
 
 .images img{
-    height: 80%;
     position: absolute;
     left: 50%;
     bottom: 70px;
